@@ -6,5 +6,19 @@
 <body>
 	<h1>StreamHub App Tutorial</h1>
 	<div id="app"></div>
+	<!-- Scripts -->
+	<script>
+	(function() {
+	    var streamHubNetwork = 'labs-t402.fyre.co';
+	    fyre.conv.load({
+	        network: streamHubNetwork
+	    }, [{
+	        app: 'sdk'
+	    }], function (sdk) {
+	        // Initialize your app here, e.g.
+	        // var myApp = new App({ "sdk": sdk });
+	    });
+	}());
+	</script>
 </body>
 </html>
