@@ -2,6 +2,17 @@
 <head>
 	<title>StreamHub App Tutorial</title>
 	<script src="http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre.js"></script>
+	<script src="js/App.js"></script>
+	<style>
+	.content {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding-top: 5px;
+	}
+	.content > .author {
+		font-weight: bold;
+	}
+	</style>
 </head>
 <body>
 	<h1>StreamHub App Tutorial</h1>
@@ -17,6 +28,14 @@
 	    }], function (sdk) {
 	        // Initialize your app here, e.g.
 	        // var myApp = new App({ "sdk": sdk });
+	        window.app = new App({
+	        	streamHubSdk: sdk,
+	        	el: 'app',
+	        	collection: {
+	        		siteId: '303767',
+			        articleId: 'tutorial0'
+	        	}
+	        });
 	    });
 	}());
 	</script>
