@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StreamHub App Tutorial</title>
+	<script src="http://zor.t402.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+	<script src="js/App.js"></script>
+	<style>
+	#app {
+		width: 600px;
+	}
+	</style>
+</head>
+<body>
+	<h1>StreamHub App Tutorial</h1>
+	<div id="container">
+		<div id="app"></div>
+	</div>
+	<!-- Scripts -->
+	<script>
+	(function() {
+	    var streamHubNetwork = 'labs-t402.fyre.co';
+	    fyre.conv.load({
+	        network: streamHubNetwork
+	    }, [{
+	        siteId: '303767',
+	        articleId: 'tutorial0',
+	        el: 'app',
+	        collectionMeta: 'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJ1cmwiOiAiaHR0cDovL2xpdmVmeXJlLmNvbSIsICJhcnRpY2xlSWQiOiAidHV0b3JpYWwwIiwgInRpdGxlIjogIlR1dG9yaWFsIDAifQ.yRSo-Va13Ot-D8tnflvSW_Q_jMonfmUDammOhj5xDtI'
+	    }], function (comments) {
+	    	fyre.conv.login('eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAibGFicy10NDAyLmZ5cmUuY28iLCAiZXhwaXJlcyI6IDExMzUxNTM3NzAyLjg5NTMyLCAidXNlcl9pZCI6ICJzeXN0ZW0ifQ.HlD1dKQPwneV_TeNgl3FbsvPMshXvEgpz0SR7ST9Nmg');
+	    });
+	}());
+	</script>
+</body>
+</html>

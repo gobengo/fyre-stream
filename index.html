@@ -3,6 +3,21 @@
 	<title>StreamHub App Tutorial</title>
 	<script src="http://zor.t402.livefyre.com/wjs/v3.0.sdk/javascripts/livefyre.js"></script>
 	<script src="js/App.js"></script>
+	<link rel="stylesheet" href="{% static 'components/bootstrap.css/css/bootstrap.css' %}"></link>
+	<script src="{% static 'components/requirejs/require.js' %}"></script>
+	<script>
+	<!-- Configure RequireJS -->
+	require.config({
+	    baseUrl: "/static",
+	    paths: {
+	    	"jquery": "components/jquery/jquery",
+	    	"bootstrap": "components/bootstrap-js/bootstrap"
+	    },
+	    shim: {
+	    	"bootstrap": ["jquery"]
+	    }
+	});
+	</script>
 	<style>
 	.content {
 		border-top: 1px solid black;

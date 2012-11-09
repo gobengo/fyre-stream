@@ -1,0 +1,13 @@
+{
+"name": "StreamHub Admin",
+"version": "0.0.0",
+"main": [
+    "./app.css",
+    "./app.js"
+],
+"dependencies": {
+    "bootstrap": "latest",
+    "requirejs": "latest",
+    "requirejs-text": "latest"
+}
+}
